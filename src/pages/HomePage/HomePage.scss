@@ -1,0 +1,29 @@
+.homepage {
+    &__hero{
+        width: 91.25rem;
+    }
+    &__container{
+        display: flex;
+        justify-content: space-around;
+    }
+    &__servicecontainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__porfoliocontainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__buttoncontainer{
+        display: flex;
+        justify-content: center;
+    }
+    &__service{
+        width: 20rem;
+    }
+    &__portfolio{
+        width: 20rem;
+    }
+}
