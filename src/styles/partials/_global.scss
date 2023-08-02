@@ -1,0 +1,59 @@
+@use './mixin' as *;
+@use './typography' as *;
+@use './variable' as *;
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    @include mobile-page-header;
+    text-align: center;
+    padding: 1rem 0;
+    background-color: $primary-color2;
+    border-bottom: .03125rem solid $secondary-color1;
+}
+
+h2 {
+    @include mobile-sub-header;
+    @include tablet-sub-header;
+}
+
+h3 {
+    @include mobile-section-header;
+    @include tablet-section-header;
+}
+
+p {
+    @include mobile-body-copy;
+    @include tablet-body-copy;
+}
+
+label {
+    @include mobile-body-copy;
+    @include tablet-body-copy;
+    padding: .25rem, 0;
+}
+
+input, textarea, select {
+    @include mobile-body-copy;
+    border-radius: 1rem;
+    height: 2.25rem;
+    width: 100%;
+    padding-left: .5rem;
+    border: .0625rem solid $primary-color3;
+}
+
+button {
+    @include mobile-label-button;
+    @include tablet-label-button;
+    border: none;
+    background-color: $primary-color3;
+    color: $primary-color4;
+    width: 50%;
+    height: 1.5rem;
+    border-radius: 2rem;
+}
