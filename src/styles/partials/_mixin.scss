@@ -1,3 +1,7 @@
+@use './variable' as *;
+
+
+//Breakpoint
 @mixin mobile {
     @media (min-width: $mobile-breakpoint) {
         @content;
@@ -14,4 +18,79 @@
     @media (min-width: $desktop-breakpoint) {
         @content;
     }
+}
+
+//Mobile Font Family
+@mixin mobile-page-header {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+}
+
+@mixin mobile-section-header {
+    font-size: .75rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+}
+
+@mixin mobile-sub-header {
+    font-size: .875rem;
+    line-height: 1.375rem;
+    font-weight: 700;
+}
+
+@mixin mobile-body-copy {
+    font-size: .8125rem;
+    line-height: 1.125rem;
+    font-weight: 400;
+}
+
+@mixin mobile-footer-copy {
+    font-size: .8125rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+}
+
+@mixin mobile-label-button {
+    font-size: .625rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+}
+
+
+//Tablet & Desktop Font Family
+@mixin tablet-page-header {
+    font-size: 3.75rem;
+    line-height: 4.25rem;
+    font-weight: 700;
+}
+
+@mixin tablet-section-header {
+    font-size: 2.25rem;
+    line-height: 2.75em;
+    font-weight: 700;
+}
+
+@mixin tablet-sub-header {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+}
+
+@mixin tablet-body-copy {
+    font-size: .875rem;
+    line-height: 1.375rem;
+    font-weight: 400;
+}
+
+@mixin tablet-footer-copy {
+    font-size: .875rem;
+    line-height: 1.25rem;
+    font-weight: 400;
+}
+
+@mixin tablet-label-button {
+    font-size: .75rem;
+    line-height: 1.25rem;
+    font-weight: 700;
 }
